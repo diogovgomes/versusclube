@@ -26,7 +26,7 @@ body {
 @media (min-aspect-ratio: 942/780 ) {
 
   .carousel-item {
-    height: calc(100vh - 73px);
+    height: calc(100vh - 56px);
     background-color: #777;
   }
 
