@@ -11,16 +11,23 @@
 
   <title>Versus Clube de Jogos</title>
 
+  <link rel="stylesheet" href="https://use.typekit.net/hdn8mps.css">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/carousel.css" rel="stylesheet">
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     type="text/css">
 
   <style type="text/css">
+    * {
+      font-family: brix-slab, serif;
+font-style: normal;
+font-weight: 200;
+    }
+    
     .carousel {
       margin-bottom: 0px;
     }
@@ -33,12 +40,68 @@
       background: #FFF;
       margin-top: 0px;
       text-align: center;
-      padding: 50px 20px;
+      padding: 100px;
     }
 
-    .nossos-horarios h2 {
-
+    .nossos-horarios h3 {
+      font-size: 25px;
     }
+
+    .nossos-horarios .hour-col {
+      display: inline-block;
+      position: relative;
+      height: 250px;
+      width: 120px;
+      margin: 10px;
+    }
+
+    .nossos-horarios .hour-col .terQuinta, 
+    .nossos-horarios .hour-col .sex,
+    .nossos-horarios .hour-col .sab,
+    .nossos-horarios .hour-col .domingo {
+      background-color: #ff4b37;
+      height: 150px;
+      color: #FFF;
+    }
+
+    .nossos-horarios .hour-col .terQuinta {
+      margin-top: 30px;
+    }
+
+    .nossos-horarios .hour-col .sex {
+      margin-top: 30px;
+      height: 170px;
+    }
+
+    .nossos-horarios .hour-col .sab {
+      margin-top: 10px;
+      height: 190px;
+    }
+
+    .nossos-horarios .hour-col .domingo {
+      margin-top: 10px;
+      height: 170px;
+    }
+
+    .nossos-horarios .hour-col span {
+      position: absolute;
+      bottom: 110px;
+      right: 21px;
+      color: #FFF;
+    }
+
+    .nossos-horarios span.sexta {
+      bottom: 95px;
+      right: 26px;
+    }
+    .nossos-horarios .hour-col span.sabado {
+      bottom: 105px !important; 
+      right: 26px;
+    }
+    .nossos-horarios .hour-col span.dom {
+      bottom: 120px !important;
+    }
+    
   </style>
 </head>
 
@@ -140,8 +203,56 @@
 
     <div class="nossos-horarios">
       <h2>Nossos Horários</h2>
+      <hr />
       <div class="horarios">
-        
+        <div class="hour-col">
+          <h3>Terça</h3>
+          <div class="terQuinta">
+          </div>
+          <span>
+              16h às 23h
+            </span>
+        </div>
+        <div class="hour-col">
+          <h3>Quarta</h3>
+          <div class="terQuinta">
+          </div>
+          <span>
+              16h às 23h
+            </span>
+        </div>
+        <div class="hour-col">
+          <h3>Quinta</h3>
+          <div class="terQuinta">
+          </div>
+          <span>
+              16h às 23h
+            </span>
+        </div>
+        <div class="hour-col">
+          <h3>Sexta</h3>
+          <div class="sex">
+          </div>
+          <span class="sexta">
+              16h à 01h
+            </span>
+        </div>
+        <div class="hour-col">
+          <h3>Sábado</h3>
+          <div class="sab">
+          </div>
+          <span class="sabado">
+              14h à 01h
+            </span>
+        </div>
+        <div class="hour-col">
+          <h3>Domingo</h3>
+          <div class="domingo">
+          </div>
+          <span class="dom">
+            14h às 23h
+          </span>
+        </div>
       </div>
     </div>
 
